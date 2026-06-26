@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <meta
+    name="description"
+    content="GCFit 앱 설치, Bluetooth 기기 연결, 측정값 수신 및 기록 관리 관련 고객지원 페이지입니다."
+  />
+  <title>GCFit 고객지원 / GCFit Support</title>
+
+  <style>
+    :root {
+      --text-primary: #111827;
+      --text-secondary: #5f6877;
+      --border: #e5e7eb;
+      --background: #f7f8fa;
+      --card-background: #ffffff;
+      --accent: #4f8df7;
+      --accent-light: #eef5ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text-primary);
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Apple SD Gothic Neo",
+        "Noto Sans KR",
+        "Segoe UI",
+        sans-serif;
+      line-height: 1.7;
+      word-break: keep-all;
+    }
+
+    .container {
+      width: min(920px, calc(100% - 32px));
+      margin: 40px auto;
+    }
+
+    .header {
+      padding: 40px;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background:
+        linear-gradient(135deg, #ffffff 0%, #f2f6fc 100%);
+    }
+
+    .brand {
+      margin: 0 0 8px;
+      color: #7b818a;
+      font-size: 42px;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 30px;
+      letter-spacing: -0.8px;
+    }
+
+    .header p {
+      margin: 16px 0 0;
+      color: var(--text-secondary);
+      font-size: 17px;
+    }
+
+    .language-links {
+      margin-top: 22px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .language-links a {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: #ffffff;
+      color: var(--text-primary);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .card {
+      margin-top: 20px;
+      padding: 32px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: var(--card-background);
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      font-size: 22px;
+      letter-spacing: -0.5px;
+    }
+
+    h3 {
+      margin: 26px 0 10px;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul,
+    ol {
+      margin: 12px 0;
+      padding-left: 24px;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    .support-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .support-list li {
+      margin: 0;
+      padding: 18px;
+      border-radius: 14px;
+      background: var(--accent-light);
+    }
+
+    .contact-box {
+      padding: 22px;
+      border-radius: 16px;
+      background: #f8fafc;
+    }
+
+    .contact-row {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .contact-row:last-child {
+      border-bottom: 0;
+    }
+
+    .contact-label {
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .notice {
+      margin-top: 20px;
+      padding: 18px;
+      border-left: 4px solid var(--accent);
+      border-radius: 10px;
+      background: var(--accent-light);
+      color: #374151;
+    }
+
+    .divider {
+      margin: 32px 0;
+      border: 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .english-section {
+      scroll-margin-top: 20px;
+    }
+
+    .footer {
+      padding: 28px 0 44px;
+      color: #8b93a1;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        margin-top: 20px;
+      }
+
+      .header,
+      .card {
+        padding: 24px 20px;
+        border-radius: 16px;
+      }
+
+      .brand {
+        font-size: 34px;
+      }
+
+      .header h1 {
+        font-size: 25px;
+      }
+
+      .support-list {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-row {
+        grid-template-columns: 1fr;
+        gap: 2px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <main class="container">
+    <header class="header">
+      <p class="brand">GCFit</p>
+      <h1>고객지원 / Support</h1>
+
+```
+  <p>
+    GCFit 앱 설치, Bluetooth 기기 연결, 측정값 수신 및
+    건강 기록 관리와 관련된 도움을 제공합니다.
+  </p>
+
+  <div class="language-links">
+    <a href="#korean">한국어</a>
+    <a href="#english">English</a>
+  </div>
+</header>
+
+<section class="card" id="korean">
+  <h2>GCFit 소개</h2>
+
+  <p>
+    GCFit은 지원되는 Bluetooth 기반 건강 측정 기기와 연동하여
+    혈압, 혈당 및 체성분 측정 결과를 확인하고 기록할 수 있는
+    건강 관리 애플리케이션입니다.
+  </p>
+
+  <div class="notice">
+    GCFit에서 제공되는 측정 결과와 상태 정보는 건강 관리 참고용입니다.
+    질환의 진단이나 치료 결정을 대신하지 않으며, 건강 상태와 관련된
+    의학적 판단은 의료 전문가와 상담하시기 바랍니다.
+  </div>
+</section>
+
+<section class="card">
+  <h2>지원 항목</h2>
+
+  <ul class="support-list">
+    <li>앱 설치 및 최초 실행 관련 문의</li>
+    <li>Bluetooth 권한 설정 관련 문의</li>
+    <li>혈압계 검색·등록·연결 관련 문의</li>
+    <li>혈당기 검색·등록·연결 관련 문의</li>
+    <li>체성분계 검색·등록·연결 관련 문의</li>
+    <li>측정값 수신 및 기록 확인 관련 문의</li>
+    <li>앱 화면 및 통계 기능 관련 문의</li>
+    <li>앱 오류 및 개선 요청</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>기기가 검색되거나 연결되지 않는 경우</h2>
+
+  <ol>
+    <li>
+      휴대전화 또는 태블릿의 Bluetooth가 켜져 있는지 확인해 주세요.
+    </li>
+    <li>
+      기기 설정에서 GCFit의 Bluetooth 권한이 허용되어 있는지
+      확인해 주세요.
+    </li>
+    <li>
+      측정 기기의 전원이 켜져 있고 다른 휴대전화와 연결되어 있지
+      않은지 확인해 주세요.
+    </li>
+    <li>
+      측정 기기를 휴대전화 가까이에 둔 후 다시 검색해 주세요.
+    </li>
+    <li>
+      GCFit 앱을 완전히 종료한 후 다시 실행해 주세요.
+    </li>
+    <li>
+      Bluetooth를 껐다가 다시 켠 후 기기 검색을 다시 진행해 주세요.
+    </li>
+    <li>
+      문제가 지속되면 휴대전화를 재시작한 후 다시 시도해 주세요.
+    </li>
+  </ol>
+
+  <h3>Android 사용자의 경우</h3>
+
+  <p>
+    Android 버전에 따라 주변 기기 또는 위치 권한이 Bluetooth 기기
+    검색에 필요할 수 있습니다. GCFit은 해당 권한을 사용자의 실제
+    위치 추적 목적으로 사용하지 않습니다.
+  </p>
+
+  <h3>iPhone 또는 iPad 사용자의 경우</h3>
+
+  <p>
+    설정 → 개인정보 보호 및 보안 → Bluetooth에서 GCFit의 Bluetooth
+    접근이 허용되어 있는지 확인해 주세요.
+  </p>
+</section>
+
+<section class="card">
+  <h2>문의 전 준비 사항</h2>
+
+  <p>
+    아래 정보를 함께 전달해 주시면 문제를 보다 빠르게 확인할 수 있습니다.
+  </p>
+
+  <ul>
+    <li>사용 중인 휴대전화 또는 태블릿 모델명</li>
+    <li>운영체제 버전(Android 또는 iOS 버전)</li>
+    <li>GCFit 앱 버전</li>
+    <li>연결하려는 측정 기기의 제품명과 모델명</li>
+    <li>문제가 발생한 화면과 재현 순서</li>
+    <li>표시된 오류 메시지 또는 화면 캡처</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>고객지원 문의</h2>
+
+  <div class="contact-box">
+    <div class="contact-row">
+      <div class="contact-label">운영사</div>
+      <div>GC녹십자엠에스㈜</div>
+    </div>
+
+    <div class="contact-row">
+      <div class="contact-label">앱명</div>
+      <div>GCFit</div>
+    </div>
+
+    <div class="contact-row">
+      <div class="contact-label">문의 이메일</div>
+      <div>
+        <a href="mailto:[고객지원 이메일 입력]">
+          [고객지원 이메일 입력]
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-row">
+      <div class="contact-label">운영시간</div>
+      <div>평일 09:00~18:00 (대한민국 표준시)</div>
+    </div>
+
+    <div class="contact-row">
+      <div class="contact-label">휴무일</div>
+      <div>토요일, 일요일 및 대한민국 공휴일</div>
+    </div>
+  </div>
+</section>
+
+<section class="card english-section" id="english" lang="en">
+  <h2>GCFit Support Information</h2>
+
+  <p>
+    GCFit is a health management application that connects to supported
+    Bluetooth-enabled health measurement devices and allows users to view
+    and record blood pressure, blood glucose, and body composition results.
+  </p>
+
+  <div class="notice">
+    Measurement results and health status information provided by GCFit are
+    intended for general health management reference only. They are not a
+    substitute for professional medical diagnosis, treatment, or advice.
+    Please consult a qualified healthcare professional for medical decisions.
+  </div>
+
+  <hr class="divider" />
+
+  <h2>Support Services</h2>
+
+  <ul>
+    <li>App installation and initial launch</li>
+    <li>Bluetooth permission settings</li>
+    <li>Device discovery, pairing, and connection</li>
+    <li>Blood pressure monitor connection</li>
+    <li>Blood glucose meter connection</li>
+    <li>Body composition scale connection</li>
+    <li>Measurement data reception and history</li>
+    <li>App errors and improvement requests</li>
+  </ul>
+
+  <h2>When a Device Cannot Be Found or Connected</h2>
+
+  <ol>
+    <li>
+      Make sure Bluetooth is enabled on your Apple or Android device.
+    </li>
+    <li>
+      Confirm that Bluetooth permission has been granted to GCFit.
+    </li>
+    <li>
+      Make sure the measurement device is powered on and is not connected
+      to another phone or tablet.
+    </li>
+    <li>
+      Place the measurement device close to the phone and search again.
+    </li>
+    <li>
+      Completely close and reopen the GCFit app.
+    </li>
+    <li>
+      Turn Bluetooth off and back on, then try searching again.
+    </li>
+    <li>
+      If the issue continues, restart your phone and try again.
+    </li>
+  </ol>
+
+  <h2>Information to Include When Contacting Support</h2>
+
+  <ul>
+    <li>Apple or Android device model</li>
+    <li>Operating system version</li>
+    <li>GCFit app version</li>
+    <li>Connected hardware name and model number</li>
+    <li>Steps required to reproduce the issue</li>
+    <li>Error message or screenshot, if available</li>
+  </ul>
+
+  <h2>Contact Support</h2>
+
+  <div class="contact-box">
+    <div class="contact-row">
+      <div class="contact-label">Company</div>
+      <div>GC Green Cross Medical Science Corp.</div>
+    </div>
+
+    <div class="contact-row">
+      <div class="contact-label">App</div>
+      <div>GCFit</div>
+    </div>
+
+    <div class="contact-row">
+      <div class="contact-label">Email</div>
+      <div>
+        <a href="mailto:[고객지원 이메일 입력]">
+          [고객지원 이메일 입력]
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-row">
+      <div class="contact-label">Business Hours</div>
+      <div>Monday–Friday, 09:00–18:00 KST</div>
+    </div>
+
+    <div class="contact-row">
+      <div class="contact-label">Closed</div>
+      <div>Weekends and public holidays in South Korea</div>
+    </div>
+  </div>
+</section>
+
+<section class="card">
+  <h2>개인정보처리방침 / Privacy Policy</h2>
+
+  <p>
+    GCFit의 개인정보 처리에 관한 자세한 내용은 아래 페이지에서
+    확인할 수 있습니다.
+  </p>
+
+  <p>
+    For information about how GCFit handles personal data, please refer to
+    the privacy policy below.
+  </p>
+
+  <p>
+    <a href="./index.html">
+      GCFit 개인정보처리방침 보기 / View GCFit Privacy Policy
+    </a>
+  </p>
+</section>
+
+<footer class="footer">
+  © 2026 GC Green Cross Medical Science Corp. All rights reserved.
+</footer>
+```
+
+  </main>
+</body>
+</html>
