@@ -3,158 +3,519 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GCFit 개인정보처리방침</title>
+  <meta
+    name="description"
+    content="GCFit 개인정보처리방침 및 Privacy Policy"
+  />
+  <title>GCFit 개인정보처리방침 / Privacy Policy</title>
+
   <style>
+    :root {
+      --text: #222;
+      --heading: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --background: #f8fafc;
+      --card: #ffffff;
+      --accent: #2563eb;
+      --accent-light: #eff6ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.7;
-      max-width: 900px;
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Apple SD Gothic Neo",
+        "Noto Sans KR",
+        "Segoe UI",
+        sans-serif;
+      line-height: 1.75;
+      word-break: keep-all;
+    }
+
+    .container {
+      width: min(920px, calc(100% - 32px));
       margin: 40px auto;
-      padding: 0 20px;
-      color: #222;
     }
-    h1, h2 {
-      color: #111827;
+
+    .header,
+    .section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
     }
-    h1 {
-      border-bottom: 1px solid #e5e7eb;
-      padding-bottom: 16px;
+
+    .header {
+      padding: 36px;
     }
+
+    .header h1 {
+      margin: 0;
+      color: var(--heading);
+      font-size: 32px;
+      line-height: 1.35;
+    }
+
+    .header p {
+      margin: 14px 0 0;
+      color: var(--muted);
+    }
+
+    .language-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .language-links a {
+      display: inline-block;
+      padding: 8px 14px;
+      color: var(--heading);
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .section {
+      margin-top: 20px;
+      padding: 32px;
+      scroll-margin-top: 20px;
+    }
+
+    h2 {
+      margin: 30px 0 12px;
+      color: var(--heading);
+      font-size: 22px;
+    }
+
+    h2:first-child {
+      margin-top: 0;
+    }
+
+    h3 {
+      margin: 22px 0 8px;
+      color: var(--heading);
+      font-size: 18px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
     ul {
+      margin: 10px 0;
       padding-left: 24px;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    .notice {
+      margin-top: 18px;
+      padding: 16px 18px;
+      background: var(--accent-light);
+      border-left: 4px solid var(--accent);
+      border-radius: 10px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .footer {
+      padding: 28px 0 44px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        margin: 20px auto;
+      }
+
+      .header,
+      .section {
+        padding: 24px 20px;
+        border-radius: 14px;
+      }
+
+      .header h1 {
+        font-size: 26px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
     }
   </style>
 </head>
+
 <body>
-  <h1>GCFit 개인정보처리방침</h1>
+  <main class="container">
+    <header class="header">
+      <h1>GCFit 개인정보처리방침 / Privacy Policy</h1>
+      <p>
+        GCFit 모바일 애플리케이션의 개인정보 처리 및 보호에 관한 내용을 안내합니다.
+      </p>
 
-  <p>
-    GCFit은 이용자의 개인정보를 중요하게 생각하며, 관련 법령에 따라 개인정보를 안전하게 보호하기 위해 다음과 같이 개인정보처리방침을 수립·공개합니다.
-  </p>
+      <div class="language-links">
+        <a href="#korean">한국어</a>
+        <a href="#english">English</a>
+      </div>
+    </header>
 
-  <p>본 개인정보처리방침은 GCFit 모바일 애플리케이션에 적용됩니다.</p>
+    <section class="section" id="korean" lang="ko">
+      <h2>GCFit 개인정보처리방침</h2>
 
-  <h2>1. 개인정보의 처리 목적</h2>
-  <p>GCFit은 다음의 목적을 위해 개인정보를 처리합니다.</p>
-  <ul>
-    <li>사용자 건강 측정 기록 관리</li>
-    <li>혈압, 혈당, 체성분 등 건강 측정 결과 표시 및 기록</li>
-    <li>Bluetooth 기반 건강 측정 기기 검색 및 연결</li>
-    <li>앱 기능 제공 및 사용성 개선</li>
-    <li>고객 문의 및 오류 대응</li>
-  </ul>
+      <p>
+        GCFit은 이용자의 개인정보를 중요하게 생각하며, 관련 법령에 따라
+        개인정보를 안전하게 보호하기 위해 다음과 같이 개인정보처리방침을
+        수립·공개합니다.
+      </p>
 
-  <h2>2. 처리하는 개인정보 항목</h2>
-  <p>GCFit은 앱 기능 제공을 위해 다음과 같은 정보를 처리할 수 있습니다.</p>
+      <p>본 개인정보처리방침은 GCFit 모바일 애플리케이션에 적용됩니다.</p>
 
-  <h3>1) 사용자가 직접 입력하는 정보</h3>
-  <ul>
-    <li>이름 또는 닉네임</li>
-    <li>성별</li>
-    <li>나이</li>
-    <li>키</li>
-    <li>체중</li>
-    <li>기타 사용자가 앱에 직접 입력한 프로필 정보</li>
-  </ul>
+      <h2>1. 개인정보의 처리 목적</h2>
+      <p>GCFit은 다음의 목적을 위해 개인정보를 처리합니다.</p>
+      <ul>
+        <li>사용자 건강 측정 기록 관리</li>
+        <li>혈압, 혈당, 체성분 등 건강 측정 결과 표시 및 기록</li>
+        <li>Bluetooth 기반 건강 측정 기기 검색 및 연결</li>
+        <li>앱 기능 제공 및 사용성 개선</li>
+        <li>고객 문의 및 오류 대응</li>
+      </ul>
 
-  <h3>2) 건강 측정 정보</h3>
-  <ul>
-    <li>혈압 측정값</li>
-    <li>맥박 정보</li>
-    <li>혈당 측정값</li>
-    <li>체중</li>
-    <li>체지방률 등 체성분 측정값</li>
-    <li>측정 일시</li>
-    <li>측정 기기 연결 정보</li>
-  </ul>
+      <h2>2. 처리하는 개인정보 항목</h2>
+      <p>GCFit은 앱 기능 제공을 위해 다음과 같은 정보를 처리할 수 있습니다.</p>
 
-  <h3>3) 앱 권한 관련 정보</h3>
-  <ul>
-    <li>Bluetooth 권한: 건강 측정 기기 검색 및 연결을 위해 사용</li>
-    <li>위치 권한: Android 일부 버전에서 Bluetooth 기기 검색을 위해 사용될 수 있음</li>
-  </ul>
+      <h3>1) 사용자가 직접 입력하는 정보</h3>
+      <ul>
+        <li>이름 또는 닉네임</li>
+        <li>성별</li>
+        <li>나이</li>
+        <li>키</li>
+        <li>체중</li>
+        <li>기타 사용자가 앱에 직접 입력한 프로필 정보</li>
+      </ul>
 
-  <p>GCFit은 위치 권한을 사용하더라도 사용자의 실제 위치를 추적하거나 저장하지 않습니다.</p>
+      <h3>2) 건강 측정 정보</h3>
+      <ul>
+        <li>혈압 측정값</li>
+        <li>맥박 정보</li>
+        <li>혈당 측정값</li>
+        <li>체중</li>
+        <li>체지방률 등 체성분 측정값</li>
+        <li>측정 일시</li>
+        <li>측정 기기 연결 정보</li>
+      </ul>
 
-  <h2>3. 개인정보의 처리 및 보관 방식</h2>
-  <p>
-    GCFit은 사용자가 입력하거나 측정한 건강 정보를 앱 기능 제공을 위해 처리합니다.
-    현재 GCFit은 사용자의 건강 측정 데이터를 별도 서버로 전송하지 않으며, 사용자의 기기 내에 저장하는 것을 원칙으로 합니다.
-  </p>
+      <h3>3) 앱 권한 관련 정보</h3>
+      <ul>
+        <li>Bluetooth 권한: 건강 측정 기기 검색 및 연결을 위해 사용</li>
+        <li>
+          위치 권한: Android 일부 버전에서 Bluetooth 기기 검색을 위해
+          사용될 수 있음
+        </li>
+      </ul>
 
-  <p>
-    단, 향후 서버 연동 기능 또는 백업 기능이 추가되는 경우, 해당 기능 제공 전 개인정보처리방침을 개정하여 고지하겠습니다.
-  </p>
+      <p>
+        GCFit은 위치 권한을 사용하더라도 사용자의 실제 위치를 추적하거나
+        저장하지 않습니다.
+      </p>
 
-  <h2>4. 개인정보의 보유 및 이용 기간</h2>
-  <p>
-    GCFit은 이용자가 앱을 사용하는 동안 개인정보를 보유 및 이용합니다.
-    이용자가 앱 내에서 기록을 삭제하거나 앱을 삭제하는 경우, 기기 내에 저장된 정보는 함께 삭제될 수 있습니다.
-  </p>
+      <h2>3. 개인정보의 처리 및 보관 방식</h2>
+      <p>
+        GCFit은 사용자가 입력하거나 측정한 건강 정보를 앱 기능 제공을 위해
+        처리합니다. 현재 GCFit은 사용자의 건강 측정 데이터를 별도 서버로
+        전송하지 않으며, 사용자의 기기 내에 저장하는 것을 원칙으로 합니다.
+      </p>
 
-  <h2>5. 개인정보의 제3자 제공</h2>
-  <p>
-    GCFit은 이용자의 개인정보를 외부 제3자에게 제공하지 않습니다.
-    다만, 법령에 따라 수사기관 또는 관계 기관의 적법한 요청이 있는 경우에는 관련 법령에 따라 제공될 수 있습니다.
-  </p>
+      <p>
+        단, 향후 서버 연동 기능 또는 백업 기능이 추가되는 경우, 해당 기능
+        제공 전 개인정보처리방침을 개정하여 고지하겠습니다.
+      </p>
 
-  <h2>6. 개인정보 처리의 위탁</h2>
-  <p>
-    GCFit은 현재 개인정보 처리 업무를 외부 업체에 위탁하지 않습니다.
-    향후 개인정보 처리 위탁이 발생하는 경우, 위탁 대상자와 위탁 업무 내용을 본 개인정보처리방침을 통해 고지하겠습니다.
-  </p>
+      <h2>4. 개인정보의 보유 및 이용 기간</h2>
+      <p>
+        GCFit은 이용자가 앱을 사용하는 동안 개인정보를 보유 및 이용합니다.
+        이용자가 앱 내에서 기록을 삭제하거나 앱을 삭제하는 경우, 기기 내에
+        저장된 정보는 함께 삭제될 수 있습니다.
+      </p>
 
-  <h2>7. 이용자의 권리 및 행사 방법</h2>
-  <p>
-    이용자는 언제든지 앱 내에서 본인의 정보를 확인, 수정 또는 삭제할 수 있습니다.
-    또한 개인정보와 관련하여 문의가 있는 경우 아래 문의처를 통해 요청할 수 있습니다.
-  </p>
-  <ul>
-    <li>개인정보 열람 요청</li>
-    <li>개인정보 정정 요청</li>
-    <li>개인정보 삭제 요청</li>
-    <li>개인정보 처리 정지 요청</li>
-  </ul>
+      <h2>5. 개인정보의 제3자 제공</h2>
+      <p>
+        GCFit은 이용자의 개인정보를 외부 제3자에게 제공하지 않습니다.
+        다만, 법령에 따라 수사기관 또는 관계 기관의 적법한 요청이 있는
+        경우에는 관련 법령에 따라 제공될 수 있습니다.
+      </p>
 
-  <h2>8. 앱 권한 사용 안내</h2>
-  <h3>Bluetooth 권한</h3>
-  <p>건강 측정 기기와 연결하고 측정값을 수신하기 위해 사용됩니다.</p>
+      <h2>6. 개인정보 처리의 위탁</h2>
+      <p>
+        GCFit은 현재 개인정보 처리 업무를 외부 업체에 위탁하지 않습니다.
+        향후 개인정보 처리 위탁이 발생하는 경우, 위탁 대상자와 위탁 업무
+        내용을 본 개인정보처리방침을 통해 고지하겠습니다.
+      </p>
 
-  <h3>위치 권한</h3>
-  <p>
-    Android 일부 버전에서는 Bluetooth 기기 검색을 위해 위치 권한이 필요할 수 있습니다.
-    GCFit은 위치 권한을 사용자의 실제 위치 추적 목적으로 사용하지 않습니다.
-  </p>
+      <h2>7. 이용자의 권리 및 행사 방법</h2>
+      <p>
+        이용자는 언제든지 앱 내에서 본인의 정보를 확인, 수정 또는 삭제할 수
+        있습니다. 또한 개인정보와 관련하여 문의가 있는 경우 아래 문의처를
+        통해 요청할 수 있습니다.
+      </p>
+      <ul>
+        <li>개인정보 열람 요청</li>
+        <li>개인정보 정정 요청</li>
+        <li>개인정보 삭제 요청</li>
+        <li>개인정보 처리 정지 요청</li>
+      </ul>
 
-  <h2>9. 개인정보의 안전성 확보 조치</h2>
-  <ul>
-    <li>개인정보 접근 권한 최소화</li>
-    <li>앱 내 저장 정보 보호</li>
-    <li>불필요한 개인정보 수집 제한</li>
-    <li>개인정보 처리 목적 외 이용 제한</li>
-  </ul>
+      <h2>8. 앱 권한 사용 안내</h2>
 
-  <h2>10. 아동의 개인정보 보호</h2>
-  <p>
-    GCFit은 만 14세 미만 아동을 주 대상으로 하는 앱이 아닙니다.
-    만 14세 미만 아동이 앱을 사용하는 경우, 법정대리인의 동의 및 관리하에 사용하는 것을 권장합니다.
-  </p>
+      <h3>Bluetooth 권한</h3>
+      <p>건강 측정 기기와 연결하고 측정값을 수신하기 위해 사용됩니다.</p>
 
-  <h2>11. 개인정보처리방침의 변경</h2>
-  <p>
-    본 개인정보처리방침은 관련 법령, 앱 기능 변경 또는 서비스 정책 변경에 따라 개정될 수 있습니다.
-    개인정보처리방침이 변경되는 경우 앱 내 공지 또는 개인정보처리방침 페이지를 통해 안내하겠습니다.
-  </p>
+      <h3>위치 권한</h3>
+      <p>
+        Android 일부 버전에서는 Bluetooth 기기 검색을 위해 위치 권한이
+        필요할 수 있습니다. GCFit은 위치 권한을 사용자의 실제 위치 추적
+        목적으로 사용하지 않습니다.
+      </p>
 
-  <h2>12. 개인정보 보호책임자 및 문의처</h2>
-  <ul>
-    <li>회사명: 녹십자MS</li>
-    <li>앱명: GCFit</li>
-    <li>문의 이메일: jaeyeon_cho@gccorp.com</li>
-    <li>개인정보 보호책임자: 진단기기팀</li>
-  </ul>
+      <h2>9. 개인정보의 안전성 확보 조치</h2>
+      <ul>
+        <li>개인정보 접근 권한 최소화</li>
+        <li>앱 내 저장 정보 보호</li>
+        <li>불필요한 개인정보 수집 제한</li>
+        <li>개인정보 처리 목적 외 이용 제한</li>
+      </ul>
 
-  <h2>13. 시행일</h2>
-  <p>본 개인정보처리방침은 2026년 6월 25일부터 시행됩니다.</p>
+      <h2>10. 아동의 개인정보 보호</h2>
+      <p>
+        GCFit은 만 14세 미만 아동을 주 대상으로 하는 앱이 아닙니다.
+        만 14세 미만 아동이 앱을 사용하는 경우, 법정대리인의 동의 및
+        관리하에 사용하는 것을 권장합니다.
+      </p>
+
+      <h2>11. 개인정보처리방침의 변경</h2>
+      <p>
+        본 개인정보처리방침은 관련 법령, 앱 기능 변경 또는 서비스 정책
+        변경에 따라 개정될 수 있습니다. 개인정보처리방침이 변경되는 경우
+        앱 내 공지 또는 개인정보처리방침 페이지를 통해 안내하겠습니다.
+      </p>
+
+      <h2>12. 개인정보 보호책임자 및 문의처</h2>
+      <ul>
+        <li>회사명: 녹십자MS</li>
+        <li>앱명: GCFit</li>
+        <li>
+          문의 이메일:
+          <a href="mailto:jaeyeon_cho@gccorp.com">jaeyeon_cho@gccorp.com</a>
+        </li>
+        <li>개인정보 보호책임자: 진단기기팀</li>
+      </ul>
+
+      <h2>13. 시행일</h2>
+      <p>본 개인정보처리방침은 2026년 6월 25일부터 시행됩니다.</p>
+    </section>
+
+    <section class="section" id="english" lang="en">
+      <h2>GCFit Privacy Policy</h2>
+
+      <p>
+        GCFit values the privacy of its users and has established and published
+        this Privacy Policy to protect personal information in accordance with
+        applicable laws and regulations.
+      </p>
+
+      <p>This Privacy Policy applies to the GCFit mobile application.</p>
+
+      <h2>1. Purpose of Processing Personal Information</h2>
+      <p>GCFit may process personal information for the following purposes:</p>
+      <ul>
+        <li>Managing users' health measurement records</li>
+        <li>
+          Displaying and recording health measurement results, including blood
+          pressure, blood glucose, and body composition
+        </li>
+        <li>
+          Discovering and connecting to Bluetooth-enabled health measurement
+          devices
+        </li>
+        <li>Providing app features and improving usability</li>
+        <li>Responding to customer inquiries and app errors</li>
+      </ul>
+
+      <h2>2. Categories of Personal Information Processed</h2>
+      <p>
+        GCFit may process the following information in order to provide app
+        features.
+      </p>
+
+      <h3>1) Information Entered Directly by the User</h3>
+      <ul>
+        <li>Name or nickname</li>
+        <li>Gender</li>
+        <li>Age</li>
+        <li>Height</li>
+        <li>Weight</li>
+        <li>Other profile information entered directly by the user</li>
+      </ul>
+
+      <h3>2) Health Measurement Information</h3>
+      <ul>
+        <li>Blood pressure measurements</li>
+        <li>Pulse information</li>
+        <li>Blood glucose measurements</li>
+        <li>Weight</li>
+        <li>Body composition measurements, including body fat percentage</li>
+        <li>Date and time of measurement</li>
+        <li>Connected device information</li>
+      </ul>
+
+      <h3>3) App Permission-Related Information</h3>
+      <ul>
+        <li>
+          Bluetooth permission: used to discover and connect to health
+          measurement devices
+        </li>
+        <li>
+          Location permission: may be required on certain Android versions for
+          Bluetooth device discovery
+        </li>
+      </ul>
+
+      <p>
+        Even when location permission is required, GCFit does not track or store
+        the user's actual location.
+      </p>
+
+      <h2>3. Processing and Storage of Personal Information</h2>
+      <p>
+        GCFit processes health information entered or measured by the user in
+        order to provide app functionality. Currently, GCFit does not transmit
+        users' health measurement data to a separate server. As a general rule,
+        such information is stored only on the user's device.
+      </p>
+
+      <p>
+        If server integration or backup features are added in the future, this
+        Privacy Policy will be updated and notice will be provided before those
+        features are made available.
+      </p>
+
+      <h2>4. Retention and Use Period</h2>
+      <p>
+        GCFit retains and uses personal information while the user uses the app.
+        When the user deletes records within the app or removes the app, locally
+        stored information may also be deleted.
+      </p>
+
+      <h2>5. Disclosure to Third Parties</h2>
+      <p>
+        GCFit does not disclose users' personal information to external third
+        parties. However, information may be disclosed in accordance with
+        applicable laws when a lawful request is received from an investigative
+        authority or other competent government agency.
+      </p>
+
+      <h2>6. Outsourcing of Personal Information Processing</h2>
+      <p>
+        GCFit does not currently outsource the processing of personal
+        information to external service providers. If such outsourcing occurs
+        in the future, the service provider and the scope of outsourced work
+        will be disclosed through this Privacy Policy.
+      </p>
+
+      <h2>7. User Rights and How to Exercise Them</h2>
+      <p>
+        Users may review, correct, or delete their information within the app at
+        any time. Users may also contact us using the information below to make
+        requests concerning personal information.
+      </p>
+      <ul>
+        <li>Request access to personal information</li>
+        <li>Request correction of personal information</li>
+        <li>Request deletion of personal information</li>
+        <li>Request suspension of personal information processing</li>
+      </ul>
+
+      <h2>8. App Permissions</h2>
+
+      <h3>Bluetooth Permission</h3>
+      <p>
+        This permission is used to connect to health measurement devices and
+        receive measurement data.
+      </p>
+
+      <h3>Location Permission</h3>
+      <p>
+        Certain Android versions may require location permission for Bluetooth
+        device discovery. GCFit does not use this permission to track the user's
+        actual location.
+      </p>
+
+      <h2>9. Measures to Protect Personal Information</h2>
+      <ul>
+        <li>Minimizing access to personal information</li>
+        <li>Protecting information stored within the app</li>
+        <li>Limiting unnecessary collection of personal information</li>
+        <li>Restricting use outside the stated processing purposes</li>
+      </ul>
+
+      <h2>10. Children's Privacy</h2>
+      <p>
+        GCFit is not primarily intended for children under the age of 14. If a
+        child under the age of 14 uses the app, use under the consent and
+        supervision of a legal guardian is recommended.
+      </p>
+
+      <h2>11. Changes to This Privacy Policy</h2>
+      <p>
+        This Privacy Policy may be revised due to changes in applicable laws,
+        app features, or service policies. Any changes will be announced within
+        the app or on this Privacy Policy page.
+      </p>
+
+      <h2>12. Privacy Contact</h2>
+      <ul>
+        <li>Company: GC Green Cross Medical Science Corp.</li>
+        <li>App: GCFit</li>
+        <li>
+          Contact Email:
+          <a href="mailto:greencrossms@gmail.com">greencrossms@gmail.com</a>
+        </li>
+        <li>Privacy Contact: Diagnostic Devices Team</li>
+      </ul>
+
+      <h2>13. Effective Date</h2>
+      <p>This Privacy Policy is effective as of June 25, 2026.</p>
+
+      <div class="notice">
+        In the event of any inconsistency between the Korean and English
+        versions of this Privacy Policy, the Korean version shall prevail.
+      </div>
+    </section>
+
+    <footer class="footer">
+      © 2026 GC Green Cross Medical Science Corp. All rights reserved.
+    </footer>
+  </main>
 </body>
 </html>
